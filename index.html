@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Zipper and Unzipper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>File Zipper and Unzipper Tool</h1>
+  </header>
+  
+  <div class="container-wrapper">
+    <div class="container">
+      <h2>File Zipper</h2>
+      <input type="file" id="zipFileInput" multiple />
+      <button id="zipButton">Create Zip</button>
+      <a id="downloadLink" style="display: none;" download="files.zip">Download Zip</a>
+    </div>
+
+    <div class="container">
+      <h2>File Unzipper</h2>
+      <input type="file" id="unzipFileInput" />
+      <button id="unzipButton">Unzip File</button>
+      <div id="unzipOutput"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
